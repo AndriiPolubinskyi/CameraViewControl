@@ -8,7 +8,6 @@
         <StackLayout>
             <control:CameraView x:Name="CameraView" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
             <Button Clicked="Button_Clicked" HorizontalOptions="Center" VerticalOptions="End" />
-            <Image x:Name="imgPreview" Aspect="AspectFit" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -143,7 +143,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CameraViewControl\CameraViewControl.csproj">
-      <Project>{9c698ed9-2915-4932-9666-bdc98d352539}</Project>
+      <Project>{759DC629-D565-4AF0-B1F8-575D8CE3450F}</Project>
       <Name>CameraViewControl</Name>
     </ProjectReference>
   </ItemGroup>

@@ -1,11 +1,13 @@
 ﻿using CameraViewControl.Controls;
 using CameraViewControl.Enums;
 using CameraViewControl.iOS.Camera;
+using CameraViewControl.iOS.Renderers;
 using CameraViewControl.iOS.Utils;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
+[assembly: ExportRenderer(typeof(CameraView), typeof(CameraViewRenderer))]
 namespace CameraViewControl.iOS.Renderers
 {
     public class CameraViewRenderer : ViewRenderer<CameraView, CameraIOS>

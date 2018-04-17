@@ -6,6 +6,8 @@ namespace CameraViewControl
 {
     public partial class MainPage : ContentPage
     {
+        static bool IsPortrait(Page p) { return p.Width < p.Height; }
+
         public MainPage()
         {
             InitializeComponent();
@@ -29,5 +31,6 @@ namespace CameraViewControl
         {
             CameraView.NotifyShutter();
         }
+
     }
 }

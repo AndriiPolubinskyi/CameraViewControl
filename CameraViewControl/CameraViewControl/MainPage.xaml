@@ -4,23 +4,17 @@
              xmlns:local="clr-namespace:CameraViewControl"
              xmlns:control="clr-namespace:CameraViewControl.Controls"
              x:Class="CameraViewControl.MainPage">
-    <ScrollView>
-        <Grid VerticalOptions="FillAndExpand"
-          Margin="10">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="100" />
-        </Grid.RowDefinitions>
-
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="100" />
-            <ColumnDefinition Width="Auto" />
-        </Grid.ColumnDefinitions>
-
-            <control:CameraView x:Name="CameraView" Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="3"/>
-                        <Button Clicked="Button_Clicked" Text="Photo" BackgroundColor="Fuchsia"
-                                Grid.Row="1" Grid.Column="1"/>
-    </Grid>
-    </ScrollView>
+    <ContentPage.Content>
+        <RelativeLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="20">
+            <control:CameraView x:Name="CameraView" 
+                                RelativeLayout.WidthConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                RelativeLayout.HeightConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                                />
+            <Button Clicked="Button_Clicked" Text="Photo" BackgroundColor="Yellow" 
+                    RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width, Factor = 0.4}"
+	            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor = 0.9}"/>
+        </RelativeLayout>
+    </ContentPage.Content>
 </ContentPage>

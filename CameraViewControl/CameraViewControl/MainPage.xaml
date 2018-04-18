@@ -12,6 +12,12 @@
                 RelativeLayout.HeightConstraint=
                   "{ConstraintExpression Type=RelativeToParent, Property=Height}"
                                 />
+
+            <control:FocusView x:Name="FocusView" RelativeLayout.WidthConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                RelativeLayout.HeightConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                                />
             <Button Clicked="Button_Clicked" Text="Photo" BackgroundColor="Yellow" 
                     RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width, Factor = 0.4}"
 	            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor = 0.9}"/>

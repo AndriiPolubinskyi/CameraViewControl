@@ -12,6 +12,12 @@ namespace CameraViewControl
         {
             InitializeComponent();
             CameraView.Photo += CameraView_Photo;
+            FocusView.TouchFocus += FocusView_TouchFocus;
+        }
+
+        private void FocusView_TouchFocus(object sender, Point e)
+        {
+            CameraView.NotifyFocus(e);
         }
 
         private void CameraView_Photo(object sender, byte[] e)
